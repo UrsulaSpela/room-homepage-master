@@ -6,6 +6,10 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet"> 
   
   <title>Frontend Mentor | Room homepage</title>
 
@@ -17,10 +21,13 @@
 </head>
 <body>
   <section id="main">
-    Home
-    Shop
-    About
-    Contact
+    <nav>
+      <img src="images/logo.svg" alt="">
+      <a href="">Home</a>
+      <a href="">Shop</a>
+      <a href="">About</a>
+      <a href="">Contact</a>
+    </nav>
 
     <section id="slides-container">
       <div class="slide">
@@ -32,7 +39,7 @@
             Our experts combine form and function in bringing your vision to life. Create a room in your 
             own style with our collection and make your property a reflection of you and what you love.</p>
 
-          Shop now
+          <a href="" class="slide-a">Shop now <img src="images/icon-arrow.svg" alt=""></a>
         </div>
       </div>
 
@@ -45,7 +52,7 @@
             Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
             store locator. Any questions? Don't hesitate to contact us today.</p>
 
-          Shop now
+          <a href="" class="slide-a">Shop now</a>
         </div>
       </div>
 
@@ -58,9 +65,11 @@
             to ensure that every product is made as perfect and as consistent as possible. With three decades of 
             experience in this industry, we understand what customers want for their home and office.</p>
 
-          Shop now
+          <a href="" class="slide-a">Shop now</a>
         </div>
       </div>
+      <button class="previous"><img src="images/icon-angle-left.svg" alt="" ></button>
+      <button class="next"><img src="images/icon-angle-right.svg" alt="" ></button>
     </section>
 
     <div id="about">
