@@ -68,8 +68,8 @@
           <a href="" class="slide-a">Shop now</a>
         </div>
       </div>
-      <button class="previous"><img src="images/icon-angle-left.svg" alt="" ></button>
-      <button class="next"><img src="images/icon-angle-right.svg" alt="" ></button>
+      <button class="previous" onclick="plusSlides(-1)"><img src="images/icon-angle-left.svg" alt="" ></button>
+      <button class="next" onclick="plusSlides(1)"><img src="images/icon-angle-right.svg" alt="" ></button>
     </section>
 
     <div id="about">
@@ -90,5 +90,31 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+  <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n){
+showSlides(slideIndex += n);
+}
+
+function showSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+var i;
+var slides = document.querySelectorAll(".slide");
+if( n > slides.length)
+{slideIndex = 1}
+if(n < 1)
+{slideIndex = slides.length}
+for(i = 0; i < slides.length; i++){
+slides[i].style.display = "none";
+}
+slides[slideIndex-1].style.display = "flex";
+}
+</script>
 </body>
 </html>
