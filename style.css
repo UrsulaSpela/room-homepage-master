@@ -13,6 +13,9 @@ body {
   margin: 0 auto;
   position: relative;
 }
+.mobile {
+  display: none;
+}
 p {
   font-size: 12px;
   line-height: 20px;
@@ -68,6 +71,9 @@ nav a {
   letter-spacing: 5px;
   font-weight: 600;
 }
+.slide-a:hover {
+  color: hsl(0, 0%, 27%);
+}
 .slide-a img {
   padding-left: 30px;
 }
@@ -79,6 +85,10 @@ button {
   height: 80px;
   background: black;
   border: none;
+}
+button:hover {
+  background: hsl(0, 0%, 27%);
+  cursor: pointer;
 }
 button.next {
   left: 920px;
@@ -103,4 +113,56 @@ h3 {
 }
 #light {
   width: 440px;
+}
+/*---- media query ---*/
+@media only screen and (max-width: 375px) {
+  * {
+    max-width: 375px;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  body {
+    width: 375px;
+  }
+  .main {
+    height: 1538px;
+  }
+  nav {
+    position: absolute;
+    background: white;
+    color: hsl(0, 0%, 27%);
+    display: none;
+  }
+  #slides-container {
+    height: 770px;
+  }
+  .slide {
+    flex-direction: column;
+  }
+  .slide-text {
+    padding: 80px 25px;
+  }
+  .slide-text h1 {
+    font-size: 28px;
+  }
+  button {
+    top: 305px;
+    left: 265px;
+    width: 55px;
+    height: 55px;
+  }
+  button.next {
+    left: 320px;
+  }
+  #about {
+    height: 768px;
+    flex-direction: column;
+  }
+  #about-text {
+    height: 300px;
+  }
 }
