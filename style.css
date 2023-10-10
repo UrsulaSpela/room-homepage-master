@@ -6,6 +6,9 @@
 }
 body {
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #main {
   width: 1440px;
