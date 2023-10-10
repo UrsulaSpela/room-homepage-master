@@ -10,7 +10,7 @@ body {
 #main {
   width: 1440px;
   height: 800px;
-  margin: 0 auto;
+  margin: auto;
   position: relative;
 }
 .mobile {
